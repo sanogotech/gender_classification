@@ -14,38 +14,44 @@ Y = ['male', 'male', 'female', 'female', 'male', 'male', 'female', 'female',
      'female', 'male', 'male', 'female', 'female']
 
 test_data = [[190, 70, 43],[154, 75, 42],[181,65,40]]
-test_labels = ['male','male','male']
+test_labels = ['male','female','male']
+
+
 
 #DecisionTreeClassifier
 dtc_clf = tree.DecisionTreeClassifier()
 dtc_clf = dtc_clf.fit(X,Y)
 dtc_prediction = dtc_clf.predict(test_data)
-print(dtc_prediction)
+print(" DecisionTreeClassifier :",dtc_prediction )
 
 #RandomForestClassifier
 rfc_clf = RandomForestClassifier()
 rfc_clf.fit(X,Y)
 rfc_prediction = rfc_clf.predict(test_data)
-print(rfc_prediction)
+print("RandomForestClassifier  :", rfc_prediction)
 
 #Support Vector Classifier
 s_clf = SVC()
 s_clf.fit(X,Y)
 s_prediction = s_clf.predict(test_data)
-print(s_prediction)
+print(" Vector Classifier :", s_prediction)
 
 
 #LogisticRegression
 l_clf = LogisticRegression()
 l_clf.fit(X,Y)
 l_prediction = l_clf.predict(test_data)
-print(l_prediction)
+print("LogisticRegression : ",l_prediction)
 
 #accuracy scores
 dtc_tree_acc = accuracy_score(dtc_prediction,test_labels)
+print(" accuracy scores DecisionTreeClassifier :",dtc_tree_acc )
 rfc_acc = accuracy_score(rfc_prediction,test_labels)
+print(" accuracy scores RandomForestClassifier :",rfc_acc )
 l_acc = accuracy_score(l_prediction,test_labels)
+print(" accuracy scores LogisticRegression :",l_acc )
 s_acc = accuracy_score(s_prediction,test_labels)
+print(" accuracy scores Support Vector Classifier :",s_acc )
 
 classifiers = ['Decision Tree', 'Random Forest', 'Logistic Regression' , 'SVC']
 accuracy = np.array([dtc_tree_acc, rfc_acc, l_acc, s_acc])
