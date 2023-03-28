@@ -2,6 +2,7 @@
 ##  scikit-learn
 
 ```
+pip install  pandas
 pip install scikit-learn
 ```
 
