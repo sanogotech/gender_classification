@@ -2,6 +2,8 @@
 
 - https://machinelearningmastery.com/machine-learning-in-python-step-by-step/
 
+- https://medium.com/@amkurian/how-to-build-a-gender-classifier-in-python-using-scikit-learn-13c7bb502f2e
+
 ##  scikit-learn
 
 ```
