@@ -41,5 +41,7 @@ Decision Tree is the best classifier for this problem
 ## Processus de validation du modèle de machine 
 
 - 1. Apprentissage du modèle
-- 2. Test du modèle
-- 3. Validation du modèle
+- 2. Test des modèles (evaluer les modèles) 
+- 3. Validation du modèle (choisir le bon modèle) et enrichir la data
+- 4. Generer le modele
+- 5. Utiliser le modele
