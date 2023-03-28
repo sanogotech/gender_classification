@@ -73,6 +73,30 @@ Let’s test 6 different algorithms:
 
 * This is a good mixture of simple linear (LR and LDA), nonlinear (KNN, CART, NB and SVM) algorithms.
 
+**Select Best Model
+We now have 6 models and accuracy estimations for each. We need to compare the models to each other and select the most accurate.
+
+Running the example above, we get the following raw results:
+
+- LR: 0.960897 (0.052113)
+- LDA: 0.973974 (0.040110)
+- KNN: 0.957191 (0.043263)
+- CART: 0.957191 (0.043263)
+- NB: 0.948858 (0.056322)
+- SVM: 0.983974 (0.032083)
+
+Note: Your results may vary given the stochastic nature of the algorithm or evaluation procedure, or differences in numerical precision. Consider running the example a few times and compare the average outcome.
+
+What scores did you get?
+Post your results in the comments below.
+
+In this case, we can see that it looks like Support Vector Machines (SVM) has the largest estimated accuracy score at about 0.98 or 98%.
+
+We can also create a plot of the model evaluation results and compare the spread and the mean accuracy of each model. There is a population of accuracy measures for each algorithm because each algorithm was evaluated 10 times (via 10 fold-cross validation).
+
+A useful way to compare the samples of results for each algorithm is to create a box and whisker plot for each distribution and compare the distributions.
+
+
 ```python
 # compare algorithms
 from pandas import read_csv
