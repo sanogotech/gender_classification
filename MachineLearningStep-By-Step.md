@@ -205,3 +205,39 @@ print(confusion_matrix(Y_validation, predictions))
 print(classification_report(Y_validation, predictions))
 
 ```
+
+## You Can Do Machine Learning in Python
+
+Work through the tutorial above. It will take you 5-to-10 minutes, max!
+
+* You do not need to understand everything. (at least not right now) Your goal is to run through the tutorial end-to-end and get a result. You do not need to understand everything on the first pass. List down your questions as you go. Make heavy use of the help(“FunctionName”) help syntax in Python to learn about all of the functions that you’re using.
+
+* You do not need to know how the algorithms work. It is important to know about the limitations and how to configure machine learning algorithms. But learning about algorithms can come later. You need to build up this algorithm knowledge slowly over a long period of time. Today, start off by getting comfortable with the platform.
+
+* You do not need to be a Python programmer. The syntax of the Python language can be intuitive if you are new to it. Just like other languages, focus on function calls (e.g. function()) and assignments (e.g. a = “b”). This will get you most of the way. You are a developer, you know how to pick up the basics of a language real fast. Just get started and dive into the details later.
+
+* You do not need to be a machine learning expert. You can learn about the benefits and limitations of various algorithms later, and there are plenty of posts that you can read later to brush up on the steps of a machine learning project and the importance of evaluating accuracy using cross validation.
+
+* What about other steps in a machine learning project. We did not cover all of the steps in a machine learning project because this is your first project and we need to focus on the key steps. Namely, loading data, looking at the data, evaluating some algorithms and making some predictions. In later tutorials we can look at other data preparation and result improvement tasks.
+
+
+## Summary
+
+In this post, you discovered step-by-step how to complete your first machine learning project in Python.
+
+You discovered that completing a small end-to-end project from loading the data to making predictions is the best way to get familiar with a new platform.
+
+Your Next Step
+Do you work through the tutorial?
+
+Work through the above tutorial.
+List any questions you have.
+Search-for or research the answers.
+Remember, you can use the help(“FunctionName”) in Python to get help on any function.
+Do you have a question?
+Post it in the comments below.
+
+More Tutorials?
+Looking to continue to practice your machine learning skills, take a look at some of these tutorials:
+
+Python Machine Learning Tutorials
