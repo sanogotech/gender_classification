@@ -1,3 +1,10 @@
+
+##  scikit-learn
+
+```
+pip install scikit-learn
+```
+
 # gender_classification
 A gender classification code in python to predict the gender based on height weight and shoe size
 
