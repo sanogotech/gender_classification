@@ -37,3 +37,9 @@ Output:
 ```
 
 Decision Tree is the best classifier for this problem
+
+## Processus de validation du modèle de machine 
+
+- 1. Apprentissage du modèle
+- 2. Test du modèle
+- 3. Validation du modèle
