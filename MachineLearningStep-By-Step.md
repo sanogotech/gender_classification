@@ -56,3 +56,23 @@ print(dataset.describe())
 print(dataset.groupby('class').size())
 
 ```
+
+## Data Visualization
+
+
+
+## Build Models
+We don’t know which algorithms would be good on this problem or what configurations to use.
+
+We get an idea from the plots that some of the classes are partially linearly separable in some dimensions, so we are expecting generally good results.
+
+Let’s test 6 different algorithms:
+
+- Logistic Regression (LR)
+- Linear Discriminant Analysis (LDA)
+- K-Nearest Neighbors (KNN).
+- Classification and Regression Trees (CART).
+- Gaussian Naive Bayes (NB).
+- Support Vector Machines (SVM).
+
+* This is a good mixture of simple linear (LR and LDA), nonlinear (KNN, CART, NB and SVM) algorithms.
