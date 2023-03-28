@@ -142,3 +142,66 @@ pyplot.title('Algorithm Comparison')
 pyplot.show()
 
 ```
+
+## Make Predictions
+We can fit the model on the entire training dataset and make predictions on the validation dataset.
+
+```
+# Make predictions on validation dataset
+model = SVC(gamma='auto')
+model.fit(X_train, Y_train)
+predictions = model.predict(X_validation)
+```
+You might also like to make predictions for single rows of data. For examples on how to do that, see the tutorial:
+
+How to Make Predictions with scikit-learn
+You might also like to save the model to file and load it later to make predictions on new data. For examples on how to do this, see the tutorial:
+
+Save and Load Machine Learning Models in Python with scikit-learn
+6.2 Evaluate Predictions
+We can evaluate the predictions by comparing them to the expected results in the validation set, then calculate classification accuracy, as well as a confusion matrix and a classification report.
+
+```
+# Evaluate predictions
+print(accuracy_score(Y_validation, predictions))
+print(confusion_matrix(Y_validation, predictions))
+print(classification_report(Y_validation, predictions))
+
+```
+We can see that the accuracy is 0.966 or about 96% on the hold out dataset.
+
+The confusion matrix provides an indication of the errors made.
+
+Finally, the classification report provides a breakdown of each class by precision, recall, f1-score and support showing excellent results (granted the validation dataset was small).
+
+## Full Code
+
+
+
+```python
+# make predictions
+from pandas import read_csv
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import accuracy_score
+from sklearn.svm import SVC
+# Load dataset
+url = "https://raw.githubusercontent.com/jbrownlee/Datasets/master/iris.csv"
+names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'class']
+dataset = read_csv(url, names=names)
+# Split-out validation dataset
+array = dataset.values
+X = array[:,0:4]
+y = array[:,4]
+X_train, X_validation, Y_train, Y_validation = train_test_split(X, y, test_size=0.20, random_state=1)
+# Make predictions on validation dataset
+model = SVC(gamma='auto')
+model.fit(X_train, Y_train)
+predictions = model.predict(X_validation)
+# Evaluate predictions
+print(accuracy_score(Y_validation, predictions))
+print(confusion_matrix(Y_validation, predictions))
+print(classification_report(Y_validation, predictions))
+
+```
